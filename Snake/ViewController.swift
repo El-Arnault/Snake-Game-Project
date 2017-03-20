@@ -21,7 +21,7 @@ class ViewController: NSViewController {
         let skView = view as! SKView
         skView.frame = CGRect(x: 0, y: 0, width: 600, height: 600)
         skView.ignoresSiblingOrder = true
-        scene.scaleMode = .resizeFill
+        scene.scaleMode = .fill
         skView.presentScene(scene)
     }
 }

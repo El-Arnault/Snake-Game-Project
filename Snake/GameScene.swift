@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene, SKPhysicsContactDelegate {
+class GameScene: SKScene {
     
     /* Global Constants and Types */
     
@@ -205,6 +205,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     currentDirection = .right
                     directionChanged = true
                 }
+            case 53:
+                let transition = SKTransition.reveal(with: SKTransitionDirection.down, duration: 1.0)
+                    
+                let nextScene = GameScene(size: self.size) //::ToDo Change to MenuScene
+                nextScene.scaleMode = SKSceneScaleMode.fill
+                self.view?.presentScene(nextScene, transition: transition)
             default:
                 print("Unknown key pressed: \(event.keyCode)\n")
             }

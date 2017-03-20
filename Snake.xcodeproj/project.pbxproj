@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB0F9BE91E7B3676009F83CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB0F9BE81E7B3676009F83CB /* Assets.xcassets */; };
+		DB22D2391E7FEFC300C0257E /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22D2381E7FEFC300C0257E /* MenuScene.swift */; };
 		DBB0B1401E7694490057D020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0B13F1E7694490057D020 /* AppDelegate.swift */; };
 		DBB0B1461E7694490057D020 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0B1451E7694490057D020 /* GameScene.swift */; };
 		DBB0B1481E7694490057D020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0B1471E7694490057D020 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		DB0F9BE81E7B3676009F83CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		DB22D2381E7FEFC300C0257E /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		DBB0B13C1E7694490057D020 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB0B13F1E7694490057D020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB0B1451E7694490057D020 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				DBB0B1471E7694490057D020 /* ViewController.swift */,
 				DBB0B14B1E7694490057D020 /* Main.storyboard */,
 				DBB0B14E1E7694490057D020 /* Info.plist */,
+				DB22D2381E7FEFC300C0257E /* MenuScene.swift */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBB0B1481E7694490057D020 /* ViewController.swift in Sources */,
+				DB22D2391E7FEFC300C0257E /* MenuScene.swift in Sources */,
 				DBB0B1461E7694490057D020 /* GameScene.swift in Sources */,
 				DBB0B1401E7694490057D020 /* AppDelegate.swift in Sources */,
 			);

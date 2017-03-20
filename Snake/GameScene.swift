@@ -87,13 +87,30 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             highScore = score
             drawInterface()
         }
+        
+        if score == GameScene.fieldSize * GameScene.fieldSize - 1 {
+            print("Congratulations! You win.\n")
+            restartSnake()
+        }
     }
     
     private func addFood() {
         food.form.removeFromParent()
-        food = Object(x: Int(random(min: 0.0, max: CGFloat(GameScene.fieldSize))),
-                      y: Int(random(min: 0.0, max: CGFloat(GameScene.fieldSize))),
-                      texture: GameScene.foodTexture)
+        repeat {
+            food = Object(x: Int(random(min: 0.0, max: CGFloat(GameScene.fieldSize))),
+                          y: Int(random(min: 0.0, max: CGFloat(GameScene.fieldSize))),
+                          texture: GameScene.foodTexture)
+        } while({
+                    var result = false
+                    for segment in snake {
+                        if segment.x == food.x && segment.y == food.y {
+                            result = true
+                            break
+                        }
+                    }
+                    return result
+                }())
+        
         addChild(food.form)
     }
     
@@ -104,12 +121,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             addFood()
         }
         if (!isInside(x: section.x, y: section.y)) {
-            restartSnake()
             return true
         }
         for i in 1..<snake.count {
             if (snake[i].x == section.x && snake[i].y == section.y) {
-                restartSnake()
                 return true
             }
         }
@@ -160,6 +175,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     addChild(newSection.form)
                     snake.insert(newSection, at: 0)
                 }
+            } else {
+                restartSnake()
             }
         }
     }

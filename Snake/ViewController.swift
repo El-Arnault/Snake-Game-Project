@@ -17,7 +17,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        let scene = GameScene(size: CGSize(width: 600, height: 600))
+        let scene = MenuScene(size: CGSize(width: 600, height: 600))
         let skView = view as! SKView
         skView.frame = CGRect(x: 0, y: 0, width: 600, height: 600)
         skView.ignoresSiblingOrder = true

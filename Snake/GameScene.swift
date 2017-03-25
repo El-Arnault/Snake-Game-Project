@@ -7,7 +7,6 @@
 //
 
 import SpriteKit
-import GameplayKit
 
 class GameScene: SKScene {
     
@@ -208,7 +207,7 @@ class GameScene: SKScene {
             case 53:
                 let transition = SKTransition.reveal(with: SKTransitionDirection.down, duration: 1.0)
                     
-                let nextScene = GameScene(size: self.size) //::ToDo Change to MenuScene
+                let nextScene = MenuScene(size: self.size)
                 nextScene.scaleMode = SKSceneScaleMode.fill
                 self.view?.presentScene(nextScene, transition: transition)
             default:
@@ -259,6 +258,12 @@ class GameScene: SKScene {
         for section in snake {
             section.form.removeFromParent()
         }
+        food.form.removeFromParent() //
+        food = Object(x: 4,
+                      y: 4,
+                      texture: GameScene.foodTexture) //
+        addChild(food.form) //
+        
         let index = random(min: 0, max: 4)
         snake = [Object(x: 1, y: 1, texture: GameScene.snakeTextures[index], index: index)]
         addChild(snake[0].form)

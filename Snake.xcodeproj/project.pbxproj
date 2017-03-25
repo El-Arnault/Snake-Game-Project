@@ -15,6 +15,8 @@
 		DBB0B14D1E7694490057D020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB0B14B1E7694490057D020 /* Main.storyboard */; };
 		DBB0B1581E7694490057D020 /* SnakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0B1571E7694490057D020 /* SnakeTests.swift */; };
 		DBB0B1631E7694490057D020 /* SnakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB0B1621E7694490057D020 /* SnakeUITests.swift */; };
+		DBCA0AF01E8075FF0045B3BE /* Gameplay.mov in Resources */ = {isa = PBXBuildFile; fileRef = DBCA0AEF1E8075FF0045B3BE /* Gameplay.mov */; };
+		DBCA0AF21E8079150045B3BE /* GameScene (for gameplay).swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA0AF11E8079150045B3BE /* GameScene (for gameplay).swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DBB0B15E1E7694490057D020 /* SnakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB0B1621E7694490057D020 /* SnakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeUITests.swift; sourceTree = "<group>"; };
 		DBB0B1641E7694490057D020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBCA0AEF1E8075FF0045B3BE /* Gameplay.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Gameplay.mov; sourceTree = "<group>"; };
+		DBCA0AF11E8079150045B3BE /* GameScene (for gameplay).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene (for gameplay).swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				DB0F9BE81E7B3676009F83CB /* Assets.xcassets */,
 				DBB0B13F1E7694490057D020 /* AppDelegate.swift */,
-				DBB0B1451E7694490057D020 /* GameScene.swift */,
 				DBB0B1471E7694490057D020 /* ViewController.swift */,
-				DBB0B14B1E7694490057D020 /* Main.storyboard */,
-				DBB0B14E1E7694490057D020 /* Info.plist */,
+				DBB0B1451E7694490057D020 /* GameScene.swift */,
 				DB22D2381E7FEFC300C0257E /* MenuScene.swift */,
+				DBB0B14B1E7694490057D020 /* Main.storyboard */,
+				DBCA0AEF1E8075FF0045B3BE /* Gameplay.mov */,
+				DBB0B14E1E7694490057D020 /* Info.plist */,
+				DBCA0AF11E8079150045B3BE /* GameScene (for gameplay).swift */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 			files = (
 				DB0F9BE91E7B3676009F83CB /* Assets.xcassets in Resources */,
 				DBB0B14D1E7694490057D020 /* Main.storyboard in Resources */,
+				DBCA0AF01E8075FF0045B3BE /* Gameplay.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +273,7 @@
 			files = (
 				DBB0B1481E7694490057D020 /* ViewController.swift in Sources */,
 				DB22D2391E7FEFC300C0257E /* MenuScene.swift in Sources */,
+				DBCA0AF21E8079150045B3BE /* GameScene (for gameplay).swift in Sources */,
 				DBB0B1461E7694490057D020 /* GameScene.swift in Sources */,
 				DBB0B1401E7694490057D020 /* AppDelegate.swift in Sources */,
 			);
@@ -407,7 +415,7 @@
 		DBB0B1681E7694490057D020 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R7GX9454SD;
 				INFOPLIST_FILE = Snake/Info.plist;
@@ -421,7 +429,7 @@
 		DBB0B1691E7694490057D020 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R7GX9454SD;
 				INFOPLIST_FILE = Snake/Info.plist;
